@@ -29,9 +29,11 @@ const displayProduct = (product) => {
   } = product.fields;
   const { url: img } = image[0];
   // console.log(img);
-  const colorList = colors.map((color) => {
-    return ` <span class="product-color" style="background-color: ${color}"></span>`;
-  });
+  const colorList = colors
+    .map((color) => {
+      return ` <span class="product-color" style="background-color: ${color}"></span>`;
+    })
+    .join('');
   document.title = title.toUpperCase();
   productDOM.innerHTML = ` <div class="product-wrapper">
         <img src="${img}" alt="${title}" class="img" />

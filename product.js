@@ -38,7 +38,7 @@ const displayProduct = (product) => {
         <div class="product-info">
           <h3>${title}</h3>
           <h5>${company}</h5>
-          <span>${price / 100}</span>
+          <span>$${price / 100}</span>
           <div class="colors">
            ${colorList}
            
